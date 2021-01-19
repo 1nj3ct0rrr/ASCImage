@@ -12,7 +12,11 @@ We have 2 python scrip: **Image2Text.py** and **Image2Image.py**
     you see your text art of your input image as a picture -> Image file (.png, .jpg and ...) to image file
    
 ### Example
-
+  * Input Image
+    ![Input](https://uupload.ir/files/6zbj_test.png)
+  
+  * Output Image
+    ![Output](https://uupload.ir/files/lkdp_result.png)
 
 ### Installation
   * **How to run**
