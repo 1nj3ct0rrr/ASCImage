@@ -1,6 +1,6 @@
 # ASCImage
 Hi, My name is Hesam and I come back with another interesting project!
-In this project I write a python script to convert images to ASCII text art!
+In this project I write a python script to convert images to ASCII text art
 
 We have 2 python scrip: **Image2Text.py** and **Image2Image.py**
 
@@ -21,7 +21,7 @@ We have 2 python scrip: **Image2Text.py** and **Image2Image.py**
 ### Installation
   * **How to run**
   
-    You can run ```python3 {NAME OF SCRIPT}.py --help``` to see how to run this scripts with command
+    You can run `python3 {NAME OF SCRIPT}.py --help` to see how to run this scripts with command
     
   * **Python Packages**
     * CV2
