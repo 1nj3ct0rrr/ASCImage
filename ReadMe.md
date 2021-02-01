@@ -20,6 +20,7 @@ We have 2 python scrip: **Image2Text.py** and **Image2Image.py**
 
 ### Installation
   * **How to run**
+  
     You can run ```python3 {NAME OF SCRIPT}.py --help``` to see how to run this scripts with command
     
   * **Python Packages**
