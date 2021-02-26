@@ -1,37 +1,41 @@
 # ASCImage
 
-Hi, My name is Hesam and I come back with another interesting project!
-In this project I write a python script to convert images to ASCII text art
+Hello! With this Python project, you can see the images and photos you have in ASCII-Art ✏️🤩
 
-We have 2 python scrip: **Image2Text.py** and **Image2Image.py**
+## WTF is ASCII-Art
 
-- **Image to Text**:
-  with this python script, you can make a text file (.txt) that when you open this file, you
-  see your text art of input image -> Image file (.png, .jpg and ...) to text file (.txt)
-- **Image to Image**:
-  with this python script, you can make an image file (.png or ...) that when you open this file,
-  you see your text art of your input image as a picture -> Image file (.png, .jpg and ...) to image file
+ASCII-Art can be a photo or text (Or even a work of art) created by using different characters on computer or laptop keyboard or any other characters 🤔🔠🔡🔢🔣
 
-### Example
+## Scripts
 
-- Input Image
+In this repository you can see **2 scripts**, which I will now explain the use of each separately:
+
+- **Image to Text (Image2Text.py)**:
+  By using this script, you can give your photo as input and receive a **text file (.txt)** as output file in which your photo is in the form of ASCII-Art ✏️😉
+- **Image to Image (Image2Image.py)**:
+By using this script, you can give your photo as input and receiev a file as an **image (.png, .jpg, ...)** as an output file in which your photo is a ASCII-Art, but you can not change it because the output file is a file in the form of an image 😉✏️
+
+## Example
+
+- Input Image ➡️
   ![Input](https://uupload.ir/files/6zbj_test.png)
 
-- Output Image
+- Output Image ⬅️
   ![Output](https://uupload.ir/files/lkdp_result.png)
 
-### Installation
+## WTF Should I Do
 
-- **How to run**
+- **How to run 🤷🤷‍♂️**
 
-  You can run `python3 {NAME OF SCRIPT}.py --help` to see how to run this scripts with command
+  You can use the `python3 {NAME OF SCRIPT}.py --help` command to find out what the scripts need and how they run 😁
 
 - **Python Packages**
   - CV2
+  - Numpy
   - Argparse
   - Colorama
-  - Numpy
   - PIL (Image, ImageFont, ImageDraw, ImageOps)
+
 - **Example for run**
   - Image2Text:
     ```python
