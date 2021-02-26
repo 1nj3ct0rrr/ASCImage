@@ -45,3 +45,41 @@ By using this script, you can give your photo as input and receiev a file as an 
     ```python
     python3 Image2Image.py --input input.jpg --output output.jpg --column 200 --scale 2 --background white --mode simple
     ```
+
+## Follow
+
+<p>
+ <a href="https://repl.it/@hesamtavakoli06">
+  <img src="https://img.shields.io/badge/Repl.it-gray?style=flat&logo=repl.it&labelColor=gray">
+ </a>
+</p>
+
+<p>
+ <a href="https://github.com/1nj3ct0rrr">
+  <img src="https://img.shields.io/badge/GitHub-gray?style=flat&logo=github&labelColor=gray">
+ </a>
+</p>
+
+<p>
+ <a href="https://codepen.io/1nj3ct0r">
+  <img src="https://img.shields.io/badge/CodePen-black?style=flat&logo=codepen&labelColor=black">
+ </a>
+</p>
+
+<p>
+ <a href="https://linkedin.com/in/1nj3ct0r">
+  <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue">
+ </a>
+</p>
+
+<p>
+ <a href="https://leetcode.com/1nj3ct0r/">
+  <img src="https://img.shields.io/badge/LeetCode-white?style=flat&logo=leetcode&labelColor=white">
+ </a>
+</p>
+
+<p>
+ <a href="https://www.hackerrank.com/1nj3ct0r">
+  <img src="https://img.shields.io/badge/HackerRank-black?style=flat&logo=hackerrank&labelColor=black">
+ </a>
+</p>
