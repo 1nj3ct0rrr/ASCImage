@@ -2,7 +2,7 @@
 
 Hello! With this Python project, you can see the images and photos you have in ASCII-Art ✏️🤩
 
-## WTF is ASCII-Art
+## ASCII-Art
 
 ASCII-Art can be a photo or text (Or even a work of art) created by using different characters on computer or laptop keyboard or any other characters 🤔🔠🔡🔢🔣
 
@@ -23,20 +23,20 @@ By using this script, you can give your photo as input and receiev a file as an 
 - Output Image ⬅️
   ![Output](https://uupload.ir/files/lkdp_result.png)
 
-## WTF Should I Do
+## Required
 
-- **How to run 🤷🤷‍♂️**
+- **Run 🤷🤷‍♂️**
 
   You can use the `python3 {NAME OF SCRIPT}.py --help` command to find out what the scripts need and how they run 😁
 
-- **Python Packages**
+- **Packages**
   - CV2
   - Numpy
   - Argparse
   - Colorama
   - PIL (Image, ImageFont, ImageDraw, ImageOps)
 
-- **Example for run**
+- **Example**
   - Image2Text:
     ```python
     python3 Image2Text.py --input input.jpg --output output.txt --column 200 --mode simple
