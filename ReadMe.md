@@ -61,7 +61,7 @@ By using this script, you can give your photo as input and receiev a file as an 
 
 <p>
  <a href="https://github.com/1nj3ct0rrr">
-  <img src="https://img.shields.io/badge/GitHub-gray?style=flat&logo=github&labelColor=gray">
+  <img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github&labelColor=black">
  </a>
 </p>
 
