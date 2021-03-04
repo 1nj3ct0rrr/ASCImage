@@ -88,4 +88,3 @@ By using this script, you can give your photo as input and receiev a file as an 
   <img src="https://img.shields.io/badge/HackerRank-black?style=flat&logo=hackerrank&labelColor=black">
  </a>
 </p>
-
