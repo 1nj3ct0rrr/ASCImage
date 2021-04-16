@@ -58,9 +58,7 @@ def GetArgs():
                         choices=['simple', 'complex'],
                         help='10 or 70 different characters')
 
-    args = parser.parse_args()
-
-    return args
+    return parser.parse_args()
 
 
 def main(opt):
@@ -70,7 +68,6 @@ def main(opt):
         char_list = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`\'. '
 
     num_cols = opt.column
-    num_chars = len(char_list)
     image = cv2.imread(opt.input)
 
     try:
@@ -90,22 +87,20 @@ def main(opt):
         num_rows = int(height / cell_height)
         print(f'{Fore.RED} Too many columns or rows! Use default setting...')
 
-    output_file = open(opt.output, 'w')
+    with open(opt.output, 'w') as output_file:
+        num_chars = len(char_list)
+        for i in range(num_rows):
+            for j in range(num_cols):
+                output_file.write(char_list[min(
+                    int(
+                        np.mean(image[
+                            int(i * cell_height):min(int((i + 1) *
+                                                         cell_height), height),
+                            int(j * cell_width):min(int((j + 1) *
+                                                        cell_width), width)]) *
+                        num_chars / 255), num_chars - 1)])
 
-    for i in range(num_rows):
-        for j in range(num_cols):
-            output_file.write(char_list[min(
-                int(
-                    np.mean(image[
-                        int(i * cell_height):min(int((i + 1) *
-                                                     cell_height), height),
-                        int(j * cell_width):min(int((j + 1) *
-                                                    cell_width), width)]) *
-                    num_chars / 255), num_chars - 1)])
-
-        output_file.write('\n')
-
-    output_file.close()
+            output_file.write('\n')
 
 
 if __name__ == '__main__':
