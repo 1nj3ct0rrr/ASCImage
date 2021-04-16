@@ -66,9 +66,7 @@ def GetArgs():
                         choices=['simple', 'complex'],
                         help='10 or 70 different characters')
 
-    args = parser.parse_args()
-
-    return args
+    return parser.parse_args()
 
 
 def main(opt):
@@ -77,11 +75,7 @@ def main(opt):
     else:
         char_list = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`\'. '
 
-    if opt.background == 'white':
-        bg_code = 255
-    else:
-        bg_code = 0
-
+    bg_code = 255 if opt.background == 'white' else 0
     num_cols = opt.column
     num_chars = len(char_list)
     image = cv2.imread(opt.input)
@@ -113,16 +107,14 @@ def main(opt):
     draw = ImageDraw.Draw(out_image)
 
     for i in range(num_rows):
-        line = ''.join([
-            char_list[min(
+        line = (''.join(char_list[min(
                 int(
                     np.mean(image[
                         int(i * cell_height):min(int(
                             (i + 1) * cell_height), height),
                         int(j * cell_width):min(int(
                             (j + 1) * cell_width), width)]) * num_chars / 255),
-                num_chars - 1)] for j in range(num_cols)
-        ]) + '\n'
+                num_chars - 1)] for j in range(num_cols)) + '\n')
 
         draw.text((0, i * char_height), line, fill=255 - bg_code, font=font)
 
